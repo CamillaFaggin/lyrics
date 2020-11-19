@@ -18,3 +18,4 @@ Possessing and caressing me.
 
 Note that the project requires the ```json``` and ```requests``` modules to run.
 
+Prova di modifica 18/Nov/2020
