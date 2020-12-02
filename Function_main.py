@@ -1,5 +1,7 @@
 import json
 import requests
+import csv
+
 def get_lyrics():
     base_url = "https://api.lyrics.ovh/v1/"
     
@@ -17,6 +19,23 @@ def get_lyrics():
     dict_lyrics=req.json()
     list_lyr=dict_lyrics['lyrics']
     
+    with open('lyrics.csv', 'w', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerow(["artist", "song", "lyrics"])
+        writer.writerow([artist_name, song_title, list_lyr])
+
+    
+    csv.register_dialect('csv_dialect',
+                    delimiter='|',
+                    skipinitialspace=False,
+                    quoting=csv.QUOTE_ALL)
+    
+    with open('lyrics.csv', 'r') as csvfile:
+        reader = csv.reader(csvfile, delimiter=" ", quotechar='|')
+        for row in reader:
+            print(', '.join(row))
+            
+    
     if len(list_lyr) == 0 :
         print("We haven't found a lyrics for your research.")
         print("Please verify that you haven't mispelled, or try changing your song.")    
@@ -29,7 +48,5 @@ def get_lyrics():
         print('The lyrics is: ')
         
     
-    print( list_lyr )
-
 print(get_lyrics())
 
