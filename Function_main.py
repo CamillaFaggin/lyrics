@@ -71,7 +71,7 @@ def get_lyrics():
         
         conn1 = sqlite3.connect('lyrics.db')
         curs1 = conn1. cursor ()
-        curs1.execute('''CREATE TABLE ly5 (artist_name, song_title, lyrics)''')
+        #curs1.execute('''CREATE TABLE ly5 (artist_name, song_title, lyrics)''')
         curs1.execute("INSERT INTO ly5 VALUES (?,?,?)",  (artist_name, song_title, list_lyr3))
 
         r=curs1.execute('SELECT * FROM ly5 ').fetchall()
