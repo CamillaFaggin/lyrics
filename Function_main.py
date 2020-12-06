@@ -2,6 +2,8 @@ import json
 import requests
 import csv
 import argparse
+from itertools import islice
+from operator import itemgetter
 
 def main():
     parser = argparse.ArgumentParser()
@@ -48,7 +50,7 @@ def get_lyrics():
     
     with open('lyrics.csv', 'r') as csvfile:
         reader = csv.reader(csvfile, delimiter=" ", quotechar='|')
-        for row in reader:
+        for row in islice(reader, 5): # first 5 only
             print(', '.join(row))
             
     
