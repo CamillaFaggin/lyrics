@@ -1,6 +1,7 @@
 import json
 import requests
 import argparse
+import sqlite3
 
 
 def main():
@@ -17,8 +18,14 @@ def main():
     for i in range (int(args.x)):
         print(i+1,'song')
         get_lyrics()
+    
 
-        
+
+
+    
+    
+    
+    
 
 def get_lyrics():
     base_url = "https://api.lyrics.ovh/v1/"
