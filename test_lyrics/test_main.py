@@ -3,7 +3,7 @@ from Function_main import get_lyrics
 import os
 #python -m unittest /test_lyrics/test_main.py
 
-class TestMain(unittest.TestCase):
+class test_main(unittest.TestCase):
 
     # setUp function prepare some data for tests
     def setUp(self):
@@ -28,5 +28,7 @@ class TestMain(unittest.TestCase):
         os.remove(self.temporary_file)
 
 
-if __name__ == "__main__":
-    unittest.main(verbosity=2)
+if __name__ == "__Function_main__":
+    unittest.main()
+
+    
