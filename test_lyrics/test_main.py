@@ -19,7 +19,7 @@ class TestMain(unittest.TestCase):
 
 
     def test_empty_datafie(self):
-        d = Function_main.get_lyrics(self.temporary_file) 
+        d = get_lyrics(self.temporary_file) 
         self.assertFalse(d)
 
 
