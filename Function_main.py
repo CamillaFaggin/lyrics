@@ -3,6 +3,8 @@ import requests
 import csv
 import argparse
 import sqlite3
+from itertools import islice
+from operator import itemgetter
 
 def main():
     parser = argparse.ArgumentParser()
@@ -46,10 +48,10 @@ def get_lyrics():
                     delimiter='|',
                     skipinitialspace=False,
                     quoting=csv.QUOTE_ALL)
-    
+
     with open('lyrics.csv', 'r') as csvfile:
         reader = csv.reader(csvfile, delimiter=" ", quotechar='|')
-        for row in reader:
+        for row in islice(reader, 5): # first 10 only
             print(', '.join(row))
             
     
