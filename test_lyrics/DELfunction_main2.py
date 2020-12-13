@@ -45,10 +45,10 @@ def get_lyrics():
         writer.writerow(["artist", "song", "lyrics"])
         writer.writerow([artist_name, song_title, list_lyr])
 
-csv.register_dialect('csv_dialect', delimiter='|', skipinitialspace=False,
+    csv.register_dialect('csv_dialect', delimiter='|', skipinitialspace=False,
                      quoting=csv.QUOTE_ALL)
 #  first 5 only
-with open('lyrics.csv', 'r') as csvfile:
+    with open('lyrics.csv', 'r') as csvfile:
         reader = csv.reader(csvfile, delimiter=" ", quotechar='|')
         for row in islice(reader, 5):
             print(', '.join(row))
@@ -82,7 +82,7 @@ with open('lyrics.csv', 'r') as csvfile:
         print('Database from sqlite')
         print(fun_sqlite())
 
-fun_sqlite = get_lyrics
-#get_lyrics()
-main()
+#fun_sqlite = get_lyrics
+get_lyrics()
+main
 
