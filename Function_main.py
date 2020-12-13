@@ -9,7 +9,7 @@ from operator import itemgetter
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("get info", help="Insert a number of songs you want to look for")
-    parser.add_argument("-- verbosity", action="store_true")
+    parser.add_argument("-- verbosity",help="Obtain n lyrics previously set", action="store_true")
     args = parser.parse_args()
     
 
@@ -90,5 +90,5 @@ def get_lyrics():
 
 fun_sqlite = get_lyrics
 
-get_lyrics()
+#get_lyrics()
 main()
