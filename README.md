@@ -47,7 +47,7 @@ you must be in the folder test_lyrics.
 
 # Authors and acknowledgment :computer:
 Thank you all for the collaboration! 
-- [**Giulia Angelini**]
-- [**Camilla Faggin**]
-- [**Dayana Manfredi**]
-- [**Francesca Zecchinato**]
+- *Giulia Angelini*
+- *Camilla Faggin*
+- *Dayana Manfredi*
+- *Francesca Zecchinato*
