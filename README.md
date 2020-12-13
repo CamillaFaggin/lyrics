@@ -31,7 +31,7 @@ Though, nothing, will, drive, them, away
 We, can, beat, them,, just, for, one, day
 
 
-# Testing :Woman Police Officer:
+# Testing :cop:
 
 You can find the following modules:
 ```json```, ```requests```, ```argparse```, ```sqlite3```, ```csv```, ```Islice```, ```itemgetter```, 
@@ -45,7 +45,7 @@ you must be in the folder test_lyrics.
 
 
 
-# Authors and acknowledgment :Woman Technologist:
+# Authors and acknowledgment :computer:
 Thank you all for the collaboration! 
 - [**Giulia Angelini**]
 - [**Camilla Faggin**]
