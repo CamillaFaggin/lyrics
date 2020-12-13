@@ -6,7 +6,8 @@ import sqlite3
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("get info", help="The function gives the lyrics of a song n times")
+    parser.add_argument("get info", help="Insert a number n of songs you want to look for")
+    
     args = parser.parse_args()
 
 
