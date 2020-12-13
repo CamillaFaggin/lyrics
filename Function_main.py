@@ -8,7 +8,8 @@ from operator import itemgetter
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("get info", help="The function gives the lyrics of a song n times")
+    parser.add_argument("get info", help="Insert a number of songs you want to look for")
+    parser.add_argument("-- verbosity", help="The functions gives you n results that you previously set")
     args = parser.parse_args()
 
 
