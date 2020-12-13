@@ -51,7 +51,7 @@ def get_lyrics():
 
     with open('lyrics.csv', 'r') as csvfile:
         reader = csv.reader(csvfile, delimiter=" ", quotechar='|')
-        for row in islice(reader, 5): # first 10 only
+        for row in islice(reader, 5): # first 5 only
             print(', '.join(row))
             
     
