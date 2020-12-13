@@ -11,6 +11,7 @@ def main():
     parser.add_argument("get info", type=int, help="Insert a number of songs you want to look for")
     parser.add_argument("-v", help="The functions gives you n results", action="store_true")
     args = parser.parse_args()
+    return args
 
 
     parser = argparse.ArgumentParser()
