@@ -5,9 +5,11 @@ In this repository you can find a file named ```main.py```that implements the ``
 
 # Here's a brief description of each: :book:
 - argparse: By using the argparse module, we implemented -h which provides the User with a "help" message to let him/her better understand the function. Moreover we implemented also --verbosity to give more detailed information.
-Subsequently we implemented a required & positional argument that allows the User to run the function n* times:  if I insert 2, the User will be able to perform only 2 queries, thus obtaining the lyrics of 2 songs.
+Subsequently we implemented a required & positional argument that allows the User to run the function n* times:  if I insert 2, the User will be able to perform only 2 queries, thus obtaining the lyrics of 2 songs. For instance the user after calling the function will have to insert -h to obtain the get info message and --verbosity help message. Than, after reading the information the user must insert a number "x" of songs/trial he/she expects to perform and as a result obtain the lyrics. 
+
 - get_lyrics: It queries the link https://api.lyrics.ovh/v1/ with the inputs given by the User. 
 With the module csv we created a csv file ("lyrics.csv") in which we can find the authors, artist's name and lyrics that the user chose as an input.We state to print out just the first 5 lines of the given song's lyrics. If an error message is returned, the User must redo the query.
+
 - fun_sqlite: By using the sqlite3 module, the function creates a database ("lyrics.db") comprising the research made by the User. The print function shall return the database containing the artist's name, the song's title and its lyrics, researched n* times.
 
 The project uses the ```json```, ```requests```, ```argparse```, ```sqlite3```, ```csv```, ```Islice```, ```itemgetter```, ```unittest```, ```sys```, ```os``` modules.
@@ -33,9 +35,7 @@ We, can, beat, them,, just, for, one, day
 
 # Testing :cop:
 
-You can find the following modules:
-```json```, ```requests```, ```argparse```, ```sqlite3```, ```csv```, ```Islice```, ```itemgetter```, 
-```unittest```, ```sys```, ```os```.
+You can find the test procedures on the test.py. The module apply in order to work are: ```unittest```, ```sys```,```os```. The testing process is performed on the main_for_test.py file; which tests the invalid inputs. 
 
 To run it, use: 
 python -m unittest -v -b test.py
