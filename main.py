@@ -79,11 +79,11 @@ def get_lyrics(artist, song):
 
 fun_sqlite=get_lyrics
 
-
+#main
 artist = input('Write the artist name here: ')
 song = input('Write the song name here: ')    
 get_lyrics(artist, song)
-main()
+
 
 
 
