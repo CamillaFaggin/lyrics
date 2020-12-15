@@ -1,7 +1,7 @@
 import unittest
 import sys
 import os
-from mainfortest import get_lyrics
+from main_for_test import get_lyrics
 
 
 class TestInput(unittest.TestCase):
